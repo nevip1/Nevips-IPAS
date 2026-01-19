@@ -1,8 +1,15 @@
 {
-  "name": "Nevens Repo",
+  "name": "Neven Repo",
   "identifier": "de.neven.ksign",
   "apps": [
     {
+      "name": "Sga Keyboard",
+      "bundleIdentifier": "com.sgakeyboard.app",
+      "version": "1.3",
+      "developer": "Nevip",
+      "icon": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/icon.png",
+      "ipa": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/apps/example.ipa",
+      "description": "Sga Keyboard"
     }
   ]
 }
