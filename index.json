@@ -1,5 +1,5 @@
 {
-  "name": "Neven Repo",
+  "name": "Nevips Repo",
   "identifier": "de.nevip.ksign",
   "sourceURL": "https://repo.nevip.lol/index.json",
   "iconURL": "https://repo.nevip.lol/repo-icon.png",
@@ -7,7 +7,7 @@
   "subtitle": "Nevips Repo",
   "META": {
     "repoName": "Nevips Repo",
-    "repoIcon": "https://repo.nevip.lol/repo-icon.png"
+    "repoIcon": "https://repo.nevip.lol/repoicon.png"
   },
   "apps": [
     {
