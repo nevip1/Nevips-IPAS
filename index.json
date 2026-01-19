@@ -1,1 +1,8 @@
-
+{
+  "name": "Nevens Repo",
+  "identifier": "de.neven.ksign",
+  "apps": [
+    {
+    }
+  ]
+}
