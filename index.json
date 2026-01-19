@@ -1,14 +1,16 @@
 {
   "name": "Neven Repo",
+  "repoIdentifier": "de.neven.ksign",
   "identifier": "de.neven.ksign",
+  "source": "https://repo.nevip.lol/index.json",
   "apps": [
     {
       "name": "Sga Keyboard",
       "bundleIdentifier": "sga.nevip.lol",
       "version": "1.3",
       "developer": "Nevip",
-      "icon": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/apps/icons/sga.png",
-      "ipa": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/apps/sga.ipa",
+      "icon": "https://repo.nevip.lol/apps/icons/sga.png",
+      "ipa": "https://repo.nevip.lol/apps/sga.ipa",
       "description": "Sga Keyboard because why not :3"
     }
   ]
