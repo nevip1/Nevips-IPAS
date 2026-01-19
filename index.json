@@ -4,11 +4,11 @@
   "apps": [
     {
       "name": "Sga Keyboard",
-      "bundleIdentifier": "com.sgakeyboard.app",
+      "bundleIdentifier": "sga.nevip.lol",
       "version": "1.3",
       "developer": "Nevip",
-      "icon": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/icon.png",
-      "ipa": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/apps/example.ipa",
+      "icon": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/apps/icons/sga.png",
+      "ipa": "https://raw.githubusercontent.com/nevip1/ksign-repo/main/apps/sga.ipa",
       "description": "Sga Keyboard because why not :3"
     }
   ]
