@@ -40,8 +40,6 @@
     </div>
 
     <div class="row list" id="apps"></div>
-
-    <p class="small">This page reads your <code>index.json</code> and lists apps automatically.</p>
   </div>
 
   <script>
@@ -58,8 +56,9 @@
       e.preventDefault();
       try {
         await navigator.clipboard.writeText(repoUrl);
-        alert("Copied!");
+        // no alerts (clean)
       } catch {
+        // fallback without error popup
         prompt("Copy this:", repoUrl);
       }
     });
@@ -70,14 +69,11 @@
 
       try {
         const res = await fetch(repoUrl, { cache: "no-store" });
-        if (!res.ok) throw new Error("Failed to fetch index.json");
-        const data = await res.json();
+        if (!res.ok) return; // 🔇 hide errors
 
+        const data = await res.json();
         const apps = Array.isArray(data.apps) ? data.apps : [];
-        if (apps.length === 0) {
-          container.innerHTML = `<div class="app"><strong>No apps yet</strong><span>Add apps to index.json</span></div>`;
-          return;
-        }
+        if (apps.length === 0) return; // 🔇 show nothing if empty
 
         for (const app of apps) {
           const div = document.createElement("div");
@@ -90,8 +86,9 @@
           `;
           container.appendChild(div);
         }
-      } catch (err) {
-        container.innerHTML = `<div class="app"><strong>Error</strong><span>${err.message}</span></div>`;
+      } catch {
+        // 🔇 hide all errors completely
+        return;
       }
     }
 
